@@ -18,7 +18,7 @@
               'serif-4': 'Source Serif 4',
             },
             fontSize: {
-              clamp: 'clamp(3rem,50%,600px)',
+              clamp: 'clamp(1.75rem, 2vw + 0.6rem, 2.3rem)',
             },
 
             colors: {
@@ -39,7 +39,7 @@
     >
       <div class="recipe lg:max-w-sm">
         <h1
-          class="text-3xl font-sans-pro font-bold lg:text-4xl lg:leading-[3rem]"
+          class="text-3xl font-sans-pro font-bold lg:text-clamp lg:leading-[3rem]"
         >
           Cheesecake de Frutas
         </h1>
@@ -58,7 +58,7 @@
         </p>
       </div>
       <div class="ingredients lg:max-w-lg">
-        <h2 class="text-3xl font-bold mb-8 lg:text-4xl lg:leading-[3rem]">
+        <h2 class="text-3xl font-bold mb-8 lg:text-clamp lg:leading-[3rem]">
           Modo de preparo
         </h2>
         <strong class="lg:text-xl">Ingredientes:</strong>
@@ -90,7 +90,7 @@
         </ol>
 
         <button
-          class="font-serif-4 bg-[#a54328] text-white py-2 px-3 rounded-md border-0 mt-8 lg:py-2 lg:px-5 lg:text-sm hover:opacity-70 hover:transition-opacity duration-500"
+          class="bg-[#a54328] text-white py-2 px-3 rounded-md border-0 mt-8 lg:py-2 lg:px-5 lg:text-sm hover:opacity-70 hover:transition-opacity duration-500"
         >
           Reportar Erro
         </button>
