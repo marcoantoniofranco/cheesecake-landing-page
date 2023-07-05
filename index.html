@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans-pro': 'Source Serif Pro',
+              'serif-4': 'Source Serif 4',
+            },
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+    <script src="tailwind.config.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cheesecake</title>
-
-    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <main>
-      <div class="recipe">
-        <h1>Cheesecake de Frutas</h1>
-        <img src="assets/img/g10.jpg" alt="" />
-        <p>
+    <main
+      class="max-w-xs box-content mx-auto py-14 px-10 flex flex-col gap-8 lg:flex-row lg:max-w-max lg:gap-40"
+    >
+      <div class="recipe lg:max-w-sm">
+        <h1 class="text-3xl font-sans-pro font-bold">Cheesecake de Frutas</h1>
+        <img
+          class="w-full my-8"
+          src="assets/img/g10.jpg"
+          alt="Image de um desenho de um cheesecake de frutas vermelhas "
+        />
+        <p class="text-sm">
           Essa receita de cheesecake de frutas vermelhas é simplesmente
           deliciosa! A combinação do doce do morango com o sabor levemente ácido
           do mirtilo cria uma sobremesa fresca e equilibrada. Além disso, a
@@ -21,10 +49,10 @@
           fazer e que impressione seus convidados, essa é a receita ideal.
         </p>
       </div>
-      <div class="ingredients">
-        <h2>Modo de preparo</h2>
-        <ul>
-          <strong>Ingredientes:</strong>
+      <div class="ingredients lg:max-w-lg">
+        <h2 class="text-3xl font-bold mb-8">Modo de preparo</h2>
+        <strong>Ingredientes:</strong>
+        <ul class="text-sm list-disc pl-6 mb-6">
           <li>200g de biscoitos maisena</li>
           <li>100g de manteiga</li>
           <li>300g de cream cheese</li>
@@ -35,8 +63,8 @@
           <li>1 xícara de mirtilos</li>
         </ul>
 
-        <ol>
-          <strong>Modo de Preparo:</strong>
+        <strong>Modo de Preparo:</strong>
+        <ol class="text-sm list-decimal pl-6">
           <li>
             Triture os biscoitos e misture com a manteiga derretida. Forre uma
             forma e leve à geladeira.
@@ -50,6 +78,12 @@
           </li>
           <li>Cubra com as frutas e sirva gelado.</li>
         </ol>
+
+        <button
+          class="font-serif-4 bg-[#a54328] text-white py-2 px-3 rounded-md border-0 mt-8"
+        >
+          Reportar Erro
+        </button>
       </div>
     </main>
   </body>
