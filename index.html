@@ -17,6 +17,10 @@
               'sans-pro': 'Source Serif Pro',
               'serif-4': 'Source Serif 4',
             },
+            fontSize: {
+              clamp: 'clamp(3rem,50%,600px)',
+            },
+
             colors: {
               clifford: '#da373d',
             },
@@ -31,16 +35,20 @@
   </head>
   <body>
     <main
-      class="max-w-xs box-content mx-auto py-14 px-10 flex flex-col gap-8 lg:flex-row lg:max-w-max lg:gap-40"
+      class="max-w-xs box-content mx-auto py-14 px-10 flex flex-col gap-8 lg:flex-row lg:max-w-max lg:gap-40 lg:py-20 lg:px-14"
     >
       <div class="recipe lg:max-w-sm">
-        <h1 class="text-3xl font-sans-pro font-bold">Cheesecake de Frutas</h1>
+        <h1
+          class="text-3xl font-sans-pro font-bold lg:text-4xl lg:leading-[3rem]"
+        >
+          Cheesecake de Frutas
+        </h1>
         <img
           class="w-full my-8"
           src="assets/img/g10.jpg"
           alt="Image de um desenho de um cheesecake de frutas vermelhas "
         />
-        <p class="text-sm">
+        <p class="text-sm lg:text-xl">
           Essa receita de cheesecake de frutas vermelhas é simplesmente
           deliciosa! A combinação do doce do morango com o sabor levemente ácido
           do mirtilo cria uma sobremesa fresca e equilibrada. Além disso, a
@@ -50,9 +58,11 @@
         </p>
       </div>
       <div class="ingredients lg:max-w-lg">
-        <h2 class="text-3xl font-bold mb-8">Modo de preparo</h2>
-        <strong>Ingredientes:</strong>
-        <ul class="text-sm list-disc pl-6 mb-6">
+        <h2 class="text-3xl font-bold mb-8 lg:text-4xl lg:leading-[3rem]">
+          Modo de preparo
+        </h2>
+        <strong class="lg:text-xl">Ingredientes:</strong>
+        <ul class="text-sm list-disc pl-6 mb-6 lg:text-xl">
           <li>200g de biscoitos maisena</li>
           <li>100g de manteiga</li>
           <li>300g de cream cheese</li>
@@ -63,8 +73,8 @@
           <li>1 xícara de mirtilos</li>
         </ul>
 
-        <strong>Modo de Preparo:</strong>
-        <ol class="text-sm list-decimal pl-6">
+        <strong class="lg:text-xl">Modo de Preparo:</strong>
+        <ol class="text-sm list-decimal pl-6 lg:text-xl">
           <li>
             Triture os biscoitos e misture com a manteiga derretida. Forre uma
             forma e leve à geladeira.
@@ -80,7 +90,7 @@
         </ol>
 
         <button
-          class="font-serif-4 bg-[#a54328] text-white py-2 px-3 rounded-md border-0 mt-8"
+          class="font-serif-4 bg-[#a54328] text-white py-2 px-3 rounded-md border-0 mt-8 lg:py-2 lg:px-5 lg:text-sm hover:opacity-70 hover:transition-opacity duration-500"
         >
           Reportar Erro
         </button>
